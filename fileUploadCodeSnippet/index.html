@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Upload an image!</title>
+    </head>
+
+    <body>
+        <p>This website serves as a code snippet for uploading image files and displaying them.</p>
+        <div class="choose-image-container">
+            <div class="image-container">
+              <img id="uploadImage" src="images/empty_image.jpg" alt="banner"/>
+            </div>
+            <form id="imageForm" action="/api" method="post" enctype="multipart/form-data">
+              <label for="imageFile"><i class="material-icons" id="cloudIcon">cloud_upload</i>Choose a Main Image</label>
+              <input id="imageFile" name="imageFile" type="file" accept="image/*" style="display: none;"/>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
